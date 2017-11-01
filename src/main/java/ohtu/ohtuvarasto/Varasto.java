@@ -2,12 +2,12 @@ package ohtu.ohtuvarasto;
 
 public class Varasto {
 
-    // --- piilotettu tietorakenteen toteutus: ---
     private double tilavuus;  
+
     private double saldo;     
 
     // --- konstruktorit: ---
-    public Varasto(double tilavuus) {  // tilavuus on annettava
+    public Varasto(final double tilavuus) {  // tilavuus on annettava
         alustaTilavuus(tilavuus);
         saldo = 0;    
     }
